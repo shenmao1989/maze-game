@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html>
+<head>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.min.js"></script>
+    <style>
+        #map {
+            marign: 100px auto;
+        }
+
+        #map:after {
+            content: "";
+            clear: both;
+        }
+
+        #map > div {
+            width: 20px;
+            height: 20px;
+            margin: 2px 0 0 2px;
+            background-color: #ccc;
+            float: left;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        #map > div.box8 {
+            background-color: green;
+        }
+
+        #map > div.box5 {
+            background-color: red;
+        }
+
+        #map > div.box1 {
+            background-color: #f93;
+        }
+        #map > div.box-broken {
+            background-color: #000;
+        }
+
+        #map > div.step {
+            background-color: green;
+        }
+        #map .box-broken.step{
+            background-color: #023302!important;
+        }
+    </style>
+</head>
+<body>
+<div id="map">
+</div>
+<script src="maze.js"></script>
+</body>
+</html>
